@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'nunito';
+    src: url('/assets/fonts/Nunito/static/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('assets/fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+p {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    font-family: nunito;
+    vertical-align:baseline
+} 
+
+div {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    font-family: raleway;
+    vertical-align:baseline
+}
+
+body{
+    background-image: url('assets/images/background.png');
+    background-size: cover;
+}
