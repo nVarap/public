@@ -8,7 +8,7 @@
     src: url('fonts/Raleway/static/Raleway-Regular.ttf');
 }
 
-p {
+p, label {
     margin:0;
     padding:0;
     border:0;
@@ -17,6 +17,10 @@ p {
     font-family: nunito;
     vertical-align:baseline
 } 
+
+h1, h2, h3, h4 {
+    font-family: nunito;
+}
 
 div {
     margin:0;
