@@ -1,0 +1,107 @@
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #333;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #111;
+        }
+
+        nav ul li .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        nav ul li .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav ul li .dropdown-content a:hover {
+            background-color: #111;
+        }
+
+        nav ul li:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Add padding to the body content to avoid it being hidden under the fixed header */
+        main {
+            padding-top: 60px; /* Adjust based on the header's height */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../site/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Contact Me</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../site/contact.html">Contact Page</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Resources</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://www.linkedin.com/in/varaprasad-nibhanupudi-961879310/">LinkedIn</a></li>
+                        <li><a href="https://github.com/nVarap">Github</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Projects</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/Jobify/studenthallpass.html">Proj 1</a></li>
+                        <li><a href="/Jobify/teacherhallpass.html">Proj 2</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Uploads</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/Jobify/upload.html">Upload</a></li>
+                        <li><a href="/Jobify/viewer.html">View</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Main content goes here -->
+  
