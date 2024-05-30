@@ -4,42 +4,77 @@
     <title>Slate</title>
     <link rel="stylesheet" href="../css/home.css">
     <style>
-        h1, p, label, a{
+        h1,
+        p,
+        label,
+        a {
             color: white;
         }
+
     </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<h1>Slate</h1>
+<body>
 
-<p> Slate was one of the most project that I have ever done. 
-    It required months of research, along with hours of painstaking time
-    throughout the process of the project. There were 3 main steps to Slate.
-</p>
-<br>
-<p>
-    First there were a lot of research that needed to be completed in order to ensure that this could be
-    completed. First of all, I needed to look into Tensorflow and figure out how their CNN 
-    (Conventional Neural Network) libraries worked. This involved researching how CNNs worked in general.
-    I was able to get a lot of good work out of training these models. Below is the graphs of validation...
-</p>
-<div style="background-color: white; width: 500px;">
-    <p style="color: black;">V1</p>
-    <img src="../assets/images/TrainingModelV1.png" alt="First Go" name="v1">
-</div>
-<div style="background-color: white; width: 500px;">
-    <p style="color: black;">V2</p>
-    <img src="../assets/images/TestingModelV2.png" alt="Second Run - Optimized">
-</div>
+    <div id="nav-placeholder">
 
-<p>
-    I tested this using the <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T">HAM10000</a> dataset (huge thanks to them for providing 
-    such an easy to access database) and tyring to prove my algorithm on those 10000 images. Currently working towards diversifying
-</p>
-<br>
-<p> 
-    Lastly, all I needed to do was to create the application. I was working on Flutter beforehand, so this was pretty easy. 
-    However I had to get off the emulator and pull out a phone in order to fully test the camera side of the application. All that's left is to 
-    integrate the two halves, which means I'll probably need to get another phone, since the one I was using didn't have the required
-    AndroidSDK 
-</p>
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("../includes/navbar.html");
+        });
+    </script>
+    <h1>Slate</h1>
+
+    <div>
+        <p> Slate was one of the most project that I have ever done.
+            It required months of research, along with hours of painstaking time
+            throughout the process of the project. There were 3 main steps to Slate.
+        </p>
+        <br>
+        <p>
+            First there were a lot of research that needed to be completed in order to ensure that this could be
+            completed. First of all, I needed to look into Tensorflow and figure out how their CNN
+            (Conventional Neural Network) libraries worked. This involved researching how CNNs worked in general.
+            I was able to get a lot of good work out of training these models. Below is the graphs of validation...
+        </p>
+        <div style="background-color: white; width: 500px;">
+            <p style="color: black;">V1</p>
+            <img src="../assets/images/TrainingModelV1.png" alt="First Go" name="v1">
+        </div>
+        <div style="background-color: white; width: 500px;">
+            <p style="color: black;">V2</p>
+            <img src="../assets/images/TestingModelV2.png" alt="Second Run - Optimized">
+        </div>
+
+        <p>
+            I tested this using the <a
+                href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T">HAM10000</a>
+            dataset (huge thanks to them for providing
+            such an easy to access database) and trying to prove my algorithm on those 10000 images. Currently working
+            towards diversifying
+        </p>
+        <br>
+        <p>
+            Lastly, all I needed to do was to create the application. I was working on Flutter beforehand, so this was
+            pretty easy.
+            However I had to get off the emulator and pull out a phone in order to fully test the camera side of the
+            application. All that's left is to
+            integrate the two halves, which means I'll probably need to get another phone, since the one I was using
+            didn't have the required
+            AndroidSDK. Below You can see the plans and scaffolding, and eventually the emulator screenshot
+        </p>
+        <br>
+        <div style="margin-bottom: 20px;">
+            <span style="vertical-align: top; color: white;">Plans ----></span>
+            <span><img src="../assets/images/plans.png" alt="Plans" height="300px"></span>
+            <span><img src="../assets/images/arrow.png"></span>
+            <span style="vertical-align: top; color: white;">Emulator ----></span>
+            <img src="../assets/images/emulator-screenshot.png" alt="Plans" height="300px">
+        </div>
+
+        <p>That's overall this project! Here's the <a href="https://github.com/nVarap/Slate">github link</a></p>
+    </div>
+</body>
