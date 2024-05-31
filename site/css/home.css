@@ -15,11 +15,13 @@ p, label {
     font-size:100%;
     font:inherit;
     font-family: nunito;
-    vertical-align:baseline
+    vertical-align:baseline;
+    color:white;
 } 
 
 h1, h2, h3, h4 {
     font-family: nunito;
+    color: white;
 }
 
 div {
