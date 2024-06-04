@@ -8,7 +8,7 @@
     src: url('fonts/Raleway/static/Raleway-Regular.ttf');
 }
 
-p, label {
+p, label, a {
     margin:0;
     padding:0;
     border:0;
@@ -22,6 +22,10 @@ p, label {
 h1, h2, h3, h4 {
     font-family: nunito;
     color: white;
+}
+
+a:hover{
+    color: rgb(181, 248, 250);
 }
 
 div {
