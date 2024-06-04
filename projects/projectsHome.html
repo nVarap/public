@@ -13,6 +13,11 @@
             margin: 16px;
             border-radius: 8px;
             box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            background-color: rgb(105, 114, 128);
+
+        }
+        .project-card:hover {
+            background-color: #58a6f8;
         }
         .project-card h3 {
             margin: 0 0 8px;
@@ -20,26 +25,44 @@
         .project-card a {
             text-decoration: none;
             color: #007BFF;
+        
         }
         .project-card a:hover {
             text-decoration: underline;
         }
     </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+    $("#nav-placeholder").load("../includes/navbar.html");
+    });
+    </script>
     
     <div id="project-div">
         <h1 style="margin-left: 10px;">Projects</h1>
-        <div class="project-card">
-            <h3><a href="/projects/slateProject.html">Slate</a></h3>
+        <div class="project-card" onclick="location.href ='public/projects/slateProject.html'">
+            <h3>Slate</a></h3>
             <h4>Description</h4>
             <p>A mobile application that is able to detect various skin lesions and cancers</p> 
         </div>
-        <div class="project-card">
+        <div class="project-card" onclick="location.href ='public/projects/jobifyProject.html'">
             <span>
-                <h3><a href="/projects/jobifyProject.html">Jobify</a></h3>
+                <h3>Jobify</a></h3>
                 <h4>Description</h4>
                 <p>A one-stop-shop for anything and everything school related</p> 
+            </span>
+        </div>
+        <div class="project-card" onclick="location.href ='public/projects/darkHallwaysProject.html'">
+            <span>
+                <h3>Dark Hallways</a></h3>
+                <h4>Description</h4>
+                <p>A horror/point and click game that incudes numerous endings</p> 
             </span>
         </div>
     </div>
