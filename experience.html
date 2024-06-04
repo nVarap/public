@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education and Experience!</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <style>
+        /* Basic styles for the project cards */
+        .project-card {
+            border: 1px solid #ccc;
+            padding: 16px;
+            margin: 16px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            white-space: nowrap;
+            width: 1100;
+        }
+        .project-card:hover {
+            background-color: #58a6f8;
+        }
+        .project-card h3 {
+            margin: 0 0 8px;
+        }
+        .project-card a {
+            text-decoration: none;
+            color: #007BFF;
+        
+        }
+        img{
+            vertical-align: middle;
+        }
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 200px;
+            margin-bottom: 10px;
+            white-space: nowrap; /** force the elements to stay side by side **/
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+    $("#nav-placeholder").load("../includes/navbar.html");
+    });
+    </script>
+    
+    <div id="project-div">
+        <h1 style="margin-left: 10px;">Education and Experience</h1>
+        <div class="project-card">
+            <div style="display: inline;" class="container">
+                <h3>Del Norte High School</h3>
+                <h4>San Diego, California</h4>
+                <p>AP Classes: AP Computer Science A, AP Calculus BC, AP Physics C: Mechanics</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <span>
+                <h3>University of California, Scout</h3>
+                <h4>Santa Clara, California (Virtual)</h4>
+                <p>Classes: French 4, AP Biology</p> 
+            </span>
+        </div>
+        <div class="project-card">
+            <span>
+                <h3>San Diego Supercomputer Center</h3>
+                <h4>San Diego, California</h4>
+                <p>Participated in multiple research and app development internships alongside professors</p> 
+            </span>
+        </div>
+    </div>    
+</body>
+</html>
